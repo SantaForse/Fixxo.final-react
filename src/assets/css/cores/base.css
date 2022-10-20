@@ -4,3 +4,11 @@ body {
     font-weight: var(--font-weight-regular);
 }
 
+a {
+    color: var(--color-theme);
+    text-decoration: none;
+}
+    a:hover {
+        color: var(--color-theme);
+        text-decoration: underline;
+    }
