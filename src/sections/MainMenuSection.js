@@ -6,7 +6,7 @@ const MainMenuSection = () => {
   return (
     <nav className="mainmenu container">
       <NavLink className="logo" to="/" end>Fixxo.</NavLink>
-    <div class="menu-links">
+    <div className="menu-links">
         <NavLink className="menu-link" to="/" end>Home</NavLink>
         <NavLink className="menu-link" to="/categories" end>Categories</NavLink>
         <NavLink className="menu-link" to="/products" end>Products</NavLink>
@@ -15,9 +15,9 @@ const MainMenuSection = () => {
     </div>
     <div className="menu-icons">
        <MenuIcon link="/search" icon="fa-regular fa-magnifying-glass" />
-       <MenuIcon link="/compare" icon="fa-regular fa-repeat" />
-       <MenuIcon link="/wishlist" icon="fa-regular fa-heart" />
-       <MenuIcon link="/shoppingcart" icon="fa-regular fa-shopping-bag" />
+       <MenuIcon link="/compare" icon="fa-regular fa-code-compare" />
+       <MenuIcon quantity="3" link="/wishlist" icon="fa-regular fa-heart" />
+       <MenuIcon quantity="4" link="/shoppingcart" icon="fa-regular fa-shopping-bag" />
     </div>
 </nav>
   )

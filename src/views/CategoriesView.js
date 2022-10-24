@@ -1,12 +1,14 @@
 import React from 'react'
+import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
+
 
 const CategoriesView = () => {
   return (
     <>
-    <MainMenuSection />
-    <h1>Categories</h1>
-  </>
+      <MainMenuSection />
+      <FooterSection />
+    </>
   )
 }
 

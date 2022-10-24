@@ -1,12 +1,13 @@
 import React from 'react'
+import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 
 const SearchView = () => {
   return (
     <>
-    <MainMenuSection />
-    <h1>Search</h1>
-  </>
+      <MainMenuSection />
+      <FooterSection />
+    </>
   )
 }
 

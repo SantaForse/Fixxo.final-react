@@ -11,6 +11,8 @@ import HomeView from './views/HomeView';
 import NotFoundView from './views/NotFoundView';
 import ShoppingCartView from './views/ShoppingCartView';
 import WishListView from './views/WishListView';
+import FooterSection from './sections/FooterSection'; 
+import MainMenuSection from './sections/MainMenuSection';
 
 function App() {
   return (

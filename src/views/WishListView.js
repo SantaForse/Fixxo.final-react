@@ -1,12 +1,14 @@
 import React from 'react'
+import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
+
 
 const WishListView = () => {
   return (
     <>
-    <MainMenuSection />
-    <h1>Wish list</h1>
-  </>
+      <MainMenuSection />
+      <FooterSection />
+    </>
   )
 }
 
