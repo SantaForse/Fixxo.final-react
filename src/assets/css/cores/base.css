@@ -12,3 +12,9 @@ a {
         color: var(--color-theme);
         text-decoration: underline;
     }
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: var(--max-width);
+    }
+}
