@@ -7,7 +7,6 @@
     grid-template-areas: "logo menuicons"
                          "menulinks menulinks" ;
 }
-
     .mainmenu .logo {
         grid-area: logo;
         font-size: 35px;
@@ -15,20 +14,19 @@
         color: var(--color-dark);
         text-decoration: none;  
     }
-
         .mainmenu .logo:hover {
             color: var(--color-dark);
             text-decoration: none;
         }
 
+
     .mainmenu .menu-links {
         overflow: hidden;
         grid-area: menulinks;
-        display: grid;
+        display: none;
         font-weight: 400;
         height: 100%;
     }
-
         .mainmenu .menu-links .menu-link {
             color: var(--color-main);
             font-weight: var(--font-weight-medium);
@@ -36,29 +34,22 @@
            margin: 8px 15px;
             transition: 200ms ease-in-out;  
         }
-
             .mainmenu .menu-links .menu-link:hover {
                 color: var(--color-theme);
                 text-decoration: none; 
             }
-
         .mainmenu .menu-links .active {
             color: var(--color-theme);
             text-decoration: none;
         }
 
-            
 
-
-
-        
     .mainmenu .menu-icons {
         grid-area: menuicons;
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
-
         .mainmenu .menu-icons .menu-icon {
             background-color: var(--color-white);
             color: var(--color-main);
@@ -72,23 +63,27 @@
             position: relative;
             box-shadow: 0 0 6px 4px var(--color-shadow);
             transition: 200ms ease-in-out;
-            
         }
-
             .mainmenu .menu-icons .menu-icon:hover {
                 color: var(--color-theme);
-                background-color: var(--color-gray-4);
+                background-color: var(--color-dark);
                 text-decoration: none;
             }
-
             .mainmenu .menu-icons .active {
                 background-color: var(--color-theme);
                 text-decoration: none;
+                box-shadow: 0 0 6px 4px var(--color-shadow);
             }
+        .mainmenu .menu-icons .btn-menu-icon {
+            border: none;
+            outline: none;
+            background-color: var(--color-dark);
+            color: var(--color-white);
+        }
 
-            .mainmenu .menu-icons .hidden {
-                display: none;
-            }
+   
+
+
 
 
 @media (min-width: 1200px) {
