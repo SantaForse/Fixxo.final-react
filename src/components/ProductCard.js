@@ -28,7 +28,7 @@ const ProductCard = () => {
                         </div>
                     </div>
 
-                    <div classNameName="card-text">
+                    <div className="card-text">
                         <p>Category</p>
                         <h1>Modern Black Blouse</h1>
                         <div className="card-stars">
@@ -38,7 +38,7 @@ const ProductCard = () => {
                             <i className="fa-sharp fa-solid fa-star"></i>
                             <i className="fa-sharp fa-solid fa-star"></i>
                         </div>
-                        <h2><span>$35.00</span>$30</h2>
+                        <h2><span>$35.00 </span>$30.00</h2>
                     </div>
 
                 </div>
