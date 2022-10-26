@@ -9,4 +9,5 @@
 
 /* sections */
 @import "../sections/MainMenuSection.css";
+@import "../sections/ProductGridSection.css";
 @import "../sections/FooterSection.css";
