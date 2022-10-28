@@ -11,9 +11,19 @@
         max-width: 1110px;
         align-items: center;
         justify-content: center;
-
+        
 
     }
+
+        .product-grid .container h1 {
+        font-size: var(--font-size-16);
+        font-weight: var(--font-weight-bold); 
+        color: var(--color-main);
+        margin-bottom: 30px;
+        text-align: center;
+        
+        
+        }
     
         .product-grid .container .grid {
             display: grid;
@@ -52,7 +62,7 @@
             margin-bottom: .2rem;
             margin-top: .5rem;
         }
-        .card .card-text h1 {
+        .card .card-text .h1title {
             color: var(--color-main);
             font-size: var(--font-size-16);
             font-weight: var(--font-weight-semi-bold);
@@ -65,13 +75,13 @@
             .card .card-text .card-stars i {
                 margin: 0 0.05rem;
             }
-        .card .card-text h2 {
+        .card .card-text .h2title {
             color: var(--color-main);
             font-size: var(--font-size-18);
             font-weight: var(--font-weight-semi-bold);
             margin: 0 0 .3rem 0;
         }
-        .card .card-text h2 span {
+        .card .card-text .h2title span {
             color: var(--color-main);
             font-weight: var(--font-weight-regular);
             font-size: var(--font-size-16);
