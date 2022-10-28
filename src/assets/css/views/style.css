@@ -6,6 +6,7 @@
 @import "../cores/Variables.css";
 @import "../cores/colors.css";
 @import "../cores/base.css";
+@import "../cores//buttons.css";
 
 /* sections */
 @import "../sections/MainMenuSection.css";

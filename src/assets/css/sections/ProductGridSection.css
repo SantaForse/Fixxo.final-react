@@ -36,7 +36,7 @@
     border-radius: 0;
     background-color: var(--color-white);
     border: none;
-    max-width: 255px;
+    width: 255px;
 }
     .card .card-text {
         display: flex;
@@ -44,7 +44,6 @@
         align-items: center;
         background-color: var(--color-white);
         width: 100%;
-        z-index: 1;
     }
         .card .card-text p {
             color: var(--color-gray-4);
@@ -89,6 +88,7 @@
     }
         .card:hover .card-box {
             background-color: var(--color-gray-card);
+            
         }
         .card .card-box .card-interaction {
             display: flex;
@@ -109,20 +109,32 @@
                 width: 36px;
                 height: 36px;
                 background-color: var(--color-white);
+                color: var(--color-dark);
                 border-radius: 50%;
                 margin-bottom: 10px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 transition: all 200ms ease-in-out;
+                font-weight: var(--font-weight-regular);
+                border: none;
+                outline: none;
             }
                 .card .card-box .card-interaction .card-balls:hover {
                     background-color: var(--color-dark);
                     color: var(--color-white);
+                    
                 }
-                .card .card-box .card-interaction .card-balls i {
+                .card .card-box .card-interaction .card-balls {
                     font-size: var(--font-size-14);
+                
                 }
+
+        .card .card-box img {
+                width: 100%;
+                height: auto;
+                z-index: 0;
+        }
         .card .card-box .card-quick-view {
             position: absolute;
             bottom: -100px;
