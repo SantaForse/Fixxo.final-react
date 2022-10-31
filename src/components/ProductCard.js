@@ -20,7 +20,7 @@ const ProductCard = ({product}) => {
                     <button onClick={addToWishList} className="card-balls"><i className="fa-regular fa-heart"></i></button>
                     <button onClick={addToCompare} className="card-balls"><i className="fa-regular fa-code-compare"></i></button>
                     <button onClick={addToCart} className="card-balls"><i className="fa-regular fa-bag-shopping"></i></button>
-                    <NavLink to="/products"><button className="card-balls last-ball"><i className="fa-solid fa-eye"></i></button></NavLink>
+                    <NavLink to={`/products/${product.name.toLowerCase().replace( / /gi, "-")}`}><button className="card-balls last-ball"><i className="fa-solid fa-eye"></i></button></NavLink>
             </div>
 
             <NavLink to={`/products/${product.name.toLowerCase().replace( / /gi, "-")}`} className="card-quick-view">
