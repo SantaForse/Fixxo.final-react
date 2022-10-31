@@ -144,6 +144,7 @@
                 width: 100%;
                 height: auto;
                 z-index: 0;
+                object-fit: cover;
         }
         .card .card-box .card-quick-view {
             position: absolute;
@@ -164,5 +165,30 @@
                         font-weight: var(--font-weight-regular);
                         font-size: var(--font-size-13);
                     }
+
+                    .card .card-box .card-interaction .last-ball {
+                        color: var(--color-theme);
+                    }
+
+
+
+@media (max-width: 1200px)  {
+
+    .card .card-box .card-interaction {
+        top: 10px;
+    }
+
+    .card .card-box .card-quick-view {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .card .card-box .card-interaction .last-ball {
+        display: none;
+    }
+}
 
      
