@@ -4,6 +4,7 @@ import MainMenuSection from '../sections/MainMenuSection'
 
 
 const NotFound = () => {
+  window.top.document.title = 'Not Found | Fixxo.'
   return (
     <>
       <MainMenuSection />

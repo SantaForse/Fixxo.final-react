@@ -4,6 +4,7 @@ import MainMenuSection from '../sections/MainMenuSection'
 
 
 const CompareView = () => {
+  window.top.document.title = 'Compare | Fixxo.'
   return (
     <>
       <MainMenuSection />

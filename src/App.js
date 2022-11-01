@@ -14,6 +14,7 @@ import ShoppingCartView from './views/ShoppingCartView';
 import WishListView from './views/WishListView';
 import FooterSection from './sections/FooterSection'; 
 import MainMenuSection from './sections/MainMenuSection';
+import BreadcrumbSection from './sections/BreadcrumbSection';
 
 function App() {
   return (

@@ -4,6 +4,7 @@ import MainMenuSection from '../sections/MainMenuSection'
 
 
 const WishListView = () => {
+  window.top.document.title = 'Wish List | Fixxo.'
   return (
     <>
       <MainMenuSection />
