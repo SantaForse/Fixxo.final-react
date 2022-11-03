@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
+import BreadcrumbSection from '../sections/BreadcrumbSection'
+
 
 
 const CompareView = () => {
@@ -8,6 +10,7 @@ const CompareView = () => {
   return (
     <>
       <MainMenuSection />
+      <BreadcrumbSection currentPage="Compare" />
       <FooterSection />
     </>
   )

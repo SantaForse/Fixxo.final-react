@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
+import BreadcrumbSection from '../sections/BreadcrumbSection'
 
 
 const WishListView = () => {
@@ -8,6 +9,7 @@ const WishListView = () => {
   return (
     <>
       <MainMenuSection />
+      <BreadcrumbSection currentPage="Wish List" />
       <FooterSection />
     </>
   )
