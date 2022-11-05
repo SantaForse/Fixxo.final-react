@@ -150,6 +150,7 @@
             position: absolute;
             bottom: -100px;
             width: 100%;
+            right: 0px;
             transition: bottom 200ms ease-in-out;
         }
             .card:hover .card-box .card-quick-view {
