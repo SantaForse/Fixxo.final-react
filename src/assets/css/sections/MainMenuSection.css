@@ -1,3 +1,8 @@
+.wideMenu {
+    width: 100%;
+    background: linear-gradient(90deg, var(--linear-gradient-dark) 0%, var(--linear-gradient-light) 100%);
+}
+
 .mainmenu {
     display: grid;
     padding-top: 10px;
@@ -6,7 +11,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo menuicons"
                          "menulinks menulinks" ;
+    
 }
+
+
     .mainmenu .logo {
         grid-area: logo;
         font-size: 35px;

@@ -16,7 +16,9 @@ import WishListView from './views/WishListView';
 import { ProductContext } from './contexts/contexts'
 
 
+
 function App() {
+  
 const [products, setProducts] = useState({
   all: [],
   featuredProducts: []
