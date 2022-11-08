@@ -37,6 +37,12 @@ useEffect(() =>  {
   }
   fetchFeaturedProducts()
 
+  const fetchFlashProducts = async () => {
+    let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
+    setProducts({...products, flashProducts: await result.json()})
+  }
+  fetchFlashProducts()
+
 
 }, [setProducts])
 

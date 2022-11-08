@@ -47,10 +47,11 @@
     
     .__showcase {
         justify-content:center;
+        padding-bottom: 30px;
     }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 2000px) {
     .__showcase .__img-left {
         display: none;
     
