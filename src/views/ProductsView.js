@@ -14,7 +14,7 @@ const ProductsView = () => {
     <>
       <MainMenuSection />
       <BreadcrumbSection currentPage="Products" />
-      <ProductGridSection title="Featured Products" items={productContext.all} />
+      <ProductGridSection title="All Products" items={productContext.all} />
       <FooterSection />
     </>
   )
