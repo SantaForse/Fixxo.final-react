@@ -1,8 +1,9 @@
 .product-grid {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Having any effect? */
+    /* align-items: center;
+    justify-content: center; */
     margin-bottom: 60px;
     padding-top: 100px;
 
@@ -10,8 +11,10 @@
 
     .product-grid .container {
         max-width: 1110px;
-        align-items: center;
-        justify-content: center;
+
+/* Having any effect? */
+        /* align-items: center;
+        justify-content: center; */
         
 
     }
