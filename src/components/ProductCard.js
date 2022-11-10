@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import ProductDetails from '../sections/ProductDetails'
 
 const ProductCard = ({product}) => {
 
@@ -23,7 +24,7 @@ const ProductCard = ({product}) => {
                     <NavLink to={`/products/${product.name.toLowerCase().replace( / /gi, "-")}`}><button className="card-balls last-ball"><i className="fa-solid fa-eye"></i></button></NavLink>
             </div>
 
-            <NavLink to={`/products/${product.name.toLowerCase().replace( / /gi, "-")}`} className="card-quick-view">
+            <NavLink to={`/products/${product.articleNumber}`} className="card-quick-view">
                 <button className="btn-theme-red">
                     <div className="line-button-l-1"></div>
                     <div className="line-button-l-2"></div>
@@ -35,7 +36,7 @@ const ProductCard = ({product}) => {
         </div>
 
         <div className="card-text">
-            <p>{product.category}</p>
+            <p>{product.articleNumbery}</p>
             <h1 className="h1title">{product.name}</h1>
             <div className="card-stars">
                 <i className="fa-sharp fa-solid fa-star"></i>

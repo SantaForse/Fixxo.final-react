@@ -1,15 +1,15 @@
 import React, {useContext} from 'react'
 import ProductGridSection from '../sections/ProductGridSection'
-import { ProductContext } from '../contexts/contexts'
+import {  FlashProductsContext } from '../contexts/contexts'
 
 const FlashFirstSection = ({flashTitle2}) => {
-    const productContext = useContext(ProductContext)
+    const flashProducts = useContext(FlashProductsContext)
   return (
     <div>
         <section className="__flash-sale-right container">
             <div className="__two-for-left"> 
                 <div className="__two-for-left-grid"></div>
-                    <ProductGridSection items={productContext.flashProducts} />
+                    <ProductGridSection items={flashProducts} />
                 </div>
             <div className="__two-for-right"> 
                 <div className="__two-for-right-box">

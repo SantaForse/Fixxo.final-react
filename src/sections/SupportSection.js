@@ -37,20 +37,4 @@ const SupportSection = ({firstH1, secondH1, thirdH1, fourthH1,
   )
 }
 
-{/*             <h1>Customer Support</h1>
-                    <p>Village did removed enjoyed</p>
-                    <p>explain talking.</p>
-                
-                <h1>Secured Payment</h1>
-                    <p>Village did removed enjoyed</p>
-                    <p>explain talking.</p>
-                
-                <h1>Free Home Delivery</h1>
-                    <p>Village did removed enjoyed</p>
-                    <p>explain talking.</p> 
-                
-                <h1>30 Day Reuters</h1>
-                    <p>Village did removed enjoyed</p>
-                    <p>explain talking.</p>
-                */}
 export default SupportSection

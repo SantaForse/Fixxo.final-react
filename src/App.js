@@ -13,48 +13,51 @@ import HomeView from './views/HomeView';
 import NotFoundView from './views/NotFoundView';
 import ShoppingCartView from './views/ShoppingCartView';
 import WishListView from './views/WishListView';
-import { ProductContext } from './contexts/contexts'
+import { ProductContext, FeaturedProductsContext, FlashProductsContext } from './contexts/contexts';
 
 
 
 function App() {
   
-const [products, setProducts] = useState({
-  all: [],
-  featuredProducts: []
-})
+const [products, setProducts] = useState([])
+const [featured, setFeatured] = useState([])
+const [flash, setFlash] = useState([])
 
 useEffect(() =>  {
-   const fetchAllProducts = async () => {
-    let result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
-    setProducts({...products, all: await result.json()})
+   const fetchAllData = async () => {
+    const result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
+    setProducts(await result.json())
   }
-  fetchAllProducts()
+  fetchAllData()
 
-  const fetchFeaturedProducts = async () => {
-    let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
-    setProducts({...products, featuredProducts: await result.json()})
+  const fetchFeaturedData = async () => {
+    const result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
+    setFeatured(await result.json())
   }
-  fetchFeaturedProducts()
+  fetchFeaturedData()
 
-  const fetchFlashProducts = async () => {
-    let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
-    setProducts({...products, flashProducts: await result.json()})
+
+
+  const fetchFlashData = async () => {
+    const result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
+    setFlash(await result.json())
   }
-  fetchFlashProducts()
+  fetchFlashData()
 
 
-}, [setProducts])
+}, [setProducts, setFeatured, setFlash])
 
   return (
 
       <BrowserRouter>
           <ProductContext.Provider value={products}>
+          <FeaturedProductsContext.Provider value={featured}>
+          <FlashProductsContext.Provider value={flash}>
             <Routes>
               <Route path="/" element={<HomeView />} />
               <Route path="/categories" element={<CategoriesView />} />
               <Route path="/products" element={<ProductsView />} />
-              <Route path="/products/:name" element={<ProductDetailsView />} />
+              <Route path="/products/:id" element={<ProductDetailsView />} />
               <Route path="/contacts" element={<ContactsView />} />
               <Route path="/search" element={<SearchView />} />
               <Route path="/compare" element={<CompareView />} />
@@ -62,6 +65,8 @@ useEffect(() =>  {
               <Route path="/shoppingcart" element={<ShoppingCartView />} />
               <Route path="*" element={<NotFoundView />} />
             </Routes>
+          </FlashProductsContext.Provider>
+          </FeaturedProductsContext.Provider>
           </ProductContext.Provider>
       </BrowserRouter>
   
