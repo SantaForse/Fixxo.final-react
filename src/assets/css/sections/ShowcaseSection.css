@@ -11,7 +11,8 @@
 
 
     .__showcase .__img-left {
-        margin-left: -127px;
+        margin-left: -160px;
+
     }  
 
     .__showcase .__img-right {
@@ -57,6 +58,19 @@
     
     }  
 
-    
-    
 }
+
+@media (max-width: 1600px) {
+    .__showcase .__showcase-body h1 {
+        font-size: var(--font-size-65);
+        text-align: center;
+
+    }
+
+    .__showcase .__showcase-body >h3 {
+        text-align: center;
+    }
+    
+
+}
+

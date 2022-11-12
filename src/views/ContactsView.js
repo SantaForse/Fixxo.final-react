@@ -4,13 +4,14 @@ import ContactFormSection from '../sections/ContactFormSection'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 import MapSection from '../sections/MapSection'
+import MainMenuWhiteSection from '../sections/MainMenuWhiteSection'
 
 
 const ContactsView = () => {
 window.top.document.title = 'Contacts | Fixxo.'
   return (
     <>
-      <MainMenuSection />
+      <MainMenuWhiteSection />
       <BreadcrumbSection currentPage="Contacts" />
       <MapSection />
       <ContactFormSection />

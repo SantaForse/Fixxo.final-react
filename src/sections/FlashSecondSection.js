@@ -23,7 +23,7 @@ const FlashFirstSection = ({flashTitle2}) => {
                 </div>
             </div>
             <div className="__two-for-right">
-                <div className="flashBigScreenSecond">
+                <div className="flashBigScreenSecond container">
                     <div className="__two-for-right-box">
                         <h1>{flashTitle2}</h1>
                         <a href="#" className="btn-theme-white">

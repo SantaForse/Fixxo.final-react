@@ -3,6 +3,7 @@ import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import BreadcrumbSection from '../sections/BreadcrumbSection'
+import MainMenuWhiteSection from '../sections/MainMenuWhiteSection'
 
 
 const CategoriesView = () => {
@@ -10,7 +11,7 @@ const CategoriesView = () => {
   
   return (
     <>
-      <MainMenuSection />
+      <MainMenuWhiteSection />
       <BreadcrumbSection currentPage="Categories" />
       <ProductGridSection title="Products" />
       <FooterSection />

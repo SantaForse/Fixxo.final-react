@@ -4,6 +4,7 @@ import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 import BreadcrumbSection from '../sections/BreadcrumbSection'
 import ProductDetails from '../sections/ProductDetails'
+import MainMenuWhiteSection from '../sections/MainMenuWhiteSection'
 
 const ProductDetailsView = () => {
   const {id} = useParams()
@@ -19,7 +20,7 @@ const ProductDetailsView = () => {
 
   return (
   <>
-      <MainMenuSection />
+      <MainMenuWhiteSection />
       <BreadcrumbSection currentPage="Products" />
       <ProductDetails product={product} />
       <FooterSection />

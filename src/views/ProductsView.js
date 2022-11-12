@@ -4,6 +4,7 @@ import MainMenuSection from '../sections/MainMenuSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import BreadcrumbSection from '../sections/BreadcrumbSection'
 import { ProductContext } from '../contexts/contexts'
+import MainMenuWhiteSection from '../sections/MainMenuWhiteSection'
 
 
 const ProductsView = () => {
@@ -12,7 +13,7 @@ const ProductsView = () => {
 
   return (
     <>
-      <MainMenuSection />
+      <MainMenuWhiteSection />
       <BreadcrumbSection currentPage="Products" />
       <ProductGridSection title="All Products" items={products} />
       <FooterSection />
