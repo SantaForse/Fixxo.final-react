@@ -1,11 +1,16 @@
 .__banners {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 30px; 
     margin-bottom: 60px;
 }
     .__banners .__banner-img-left  {
         position: relative;
+    }
+
+    .__banners .__banner-img-left img  {
+        max-width: 810px;
+        
     }
         .__banners .__banner-img-left .__banner-text {
             position: absolute;
@@ -22,6 +27,12 @@
             }
     .__banners .__banner-img-right  {
         position: relative;
+
+    }
+
+    .__banners .__banner-img-right img  {
+        max-width: 810px;
+        
     }
         .__banners .__banner-img-right .__banner-text {
             position: absolute;
@@ -36,3 +47,36 @@
             .__banners .__banner-img-right .__banner-text .btn-theme-white {
                 margin-top: 35px;
             }
+
+@media (max-width: 1400px) {
+    .__banners {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .__banners .__banner-img-left .__banner-text {
+        position: absolute;
+        top: 85px;
+        right: 35%;
+    }
+
+    
+
+        .__banners .__banner-img-left img  {
+            width: 100%;
+            
+        }
+
+        .__banners .__banner-img-left  {
+            width: 100%;
+            
+        }
+
+        .__banners .__banner-img-right  {
+            align-self: flex-end;
+        }
+
+
+        
+
+}

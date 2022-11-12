@@ -28,7 +28,7 @@ const TwoBannersSection = ({titleLeft1, titleLeft2, titleRight1, titleRight2}) =
                 <a href="#" className="btn-theme-white">
                     <div className="line-button-l-1"></div>
                     <div className="line-button-l-2"></div>
-                    <p>SHOP NOW</p>
+                    <p>FLASH SALE</p>
                     <div className="line-button-r-1"></div>
                     <div className="line-button-r-2"></div>
                 </a>
