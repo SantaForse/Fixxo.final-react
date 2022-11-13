@@ -1,6 +1,7 @@
 .wideShowcase {
     width: 100%;
     background: linear-gradient(90deg, var(--linear-gradient-dark) 0%, var(--linear-gradient-light) 100%);
+    margin-bottom: 100px;
 }
 
 .__showcase {

@@ -6,7 +6,7 @@ const FlashFirstSection = ({flashTitle2}) => {
     const {flash, getFlash} = useProductContext()
 
     useEffect (() => {
-        getFlash()
+        getFlash(4)
       }, [])
 
   return (

@@ -91,6 +91,10 @@
             color: var(--color-white);
         }
 
+        button {
+            border: none;
+        }
+
    
 
 

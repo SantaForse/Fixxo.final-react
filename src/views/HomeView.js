@@ -19,6 +19,7 @@ const HomeView = () => {
     getFeatured(8)
     getFlash(4)
   }, [])
+  
   return (
     <>
       <MainMenuSection />

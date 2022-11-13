@@ -1,26 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import ProductDetails from '../sections/ProductDetails'
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
 
-const ProductCard = ({product}) => {
+const ProductCard = ({item, product}) => {
+    const { incrementQuantity } = useShoppingCart()
 
-    const addToWishList = (e) => {
-        console.log(`${e.target} added to wishlist`)
-    }
-    const addToCompare = (e) => {
-        console.log("added to compare")
-    }
-    const addToCart = (e) => {
-        console.log("added to shopping cart")
-    }
+
   return (
     <div className="card">
         <div className="card-box">
             <img src={product.imageName} alt={product.name} />
             <div className="card-interaction">
-                    <button onClick={addToWishList} className="card-balls"><i className="fa-regular fa-heart"></i></button>
-                    <button onClick={addToCompare} className="card-balls"><i className="fa-regular fa-code-compare"></i></button>
-                    <button onClick={addToCart} className="card-balls"><i className="fa-regular fa-bag-shopping"></i></button>
+                    <button  className="card-balls"><i className="fa-regular fa-heart"></i></button>
+                    <button  className="card-balls"><i className="fa-regular fa-code-compare"></i></button>
+                    <button onClick={() => incrementQuantity ({articleNumber: product.articleNumber, product: product})}  className="card-balls"><i className="fa-regular fa-bag-shopping"></i></button>
                     <NavLink to={`/products/${product.name.toLowerCase().replace( / /gi, "-")}`}><button className="card-balls last-ball"><i className="fa-solid fa-eye"></i></button></NavLink>
             </div>
 
