@@ -1,9 +1,11 @@
+
 .product-grid {
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
     padding-top: 100px;
 }
+
 
     .product-grid .container {
         max-width: 1110px;
@@ -67,6 +69,8 @@
             color: var(--color-theme);
             margin: 0 0 .2rem 0;
         }
+
+
             .card .card-text .card-stars i {
                 margin: 0 0.05rem;
             }

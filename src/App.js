@@ -1,4 +1,4 @@
-import React, { useEffect ,useState } from 'react'
+import React from 'react'
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -13,46 +13,16 @@ import HomeView from './views/HomeView';
 import NotFoundView from './views/NotFoundView';
 import ShoppingCartView from './views/ShoppingCartView';
 import WishListView from './views/WishListView';
-import { ProductContext, FeaturedProductsContext, FlashProductsContext } from './contexts/contexts';
+import { ProductProvider} from './contexts/ProductContext';
 
 
 
 function App() {
-  
-const [products, setProducts] = useState([])
-const [featured, setFeatured] = useState([])
-const [flash, setFlash] = useState([])
-
-useEffect(() =>  {
-   const fetchAllData = async () => {
-    const result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
-    setProducts(await result.json())
-  }
-  fetchAllData()
-
-  const fetchFeaturedData = async () => {
-    const result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
-    setFeatured(await result.json())
-  }
-  fetchFeaturedData()
-
-
-
-  const fetchFlashData = async () => {
-    const result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
-    setFlash(await result.json())
-  }
-  fetchFlashData()
-
-
-}, [setProducts, setFeatured, setFlash])
 
   return (
 
       <BrowserRouter>
-          <ProductContext.Provider value={products}>
-          <FeaturedProductsContext.Provider value={featured}>
-          <FlashProductsContext.Provider value={flash}>
+          <ProductProvider>
             <Routes>
               <Route path="/" element={<HomeView />} />
               <Route path="/categories" element={<CategoriesView />} />
@@ -65,9 +35,7 @@ useEffect(() =>  {
               <Route path="/shoppingcart" element={<ShoppingCartView />} />
               <Route path="*" element={<NotFoundView />} />
             </Routes>
-          </FlashProductsContext.Provider>
-          </FeaturedProductsContext.Provider>
-          </ProductContext.Provider>
+          </ProductProvider>
       </BrowserRouter>
   
   );

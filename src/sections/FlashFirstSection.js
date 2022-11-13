@@ -1,9 +1,14 @@
-import React, {useContext} from 'react'
+import React, {useEffect} from 'react'
 import ProductGridSection from '../sections/ProductGridSection'
-import {  FlashProductsContext } from '../contexts/contexts'
+import { useProductContext } from '../contexts/ProductContext'
 
 const FlashFirstSection = ({flashTitle}) => {
-    const flashProducts = useContext(FlashProductsContext)
+    const {flash, getFlash} = useProductContext()
+
+    useEffect (() => {
+        getFlash()
+      }, [])
+
   return (
     <div>
         <section className="__flash-sale-left container">
@@ -21,7 +26,7 @@ const FlashFirstSection = ({flashTitle}) => {
             </div>
             <div className="__two-for-right">
                 <div className="__two-for-right-grid">
-                <ProductGridSection items={flashProducts} />
+                <ProductGridSection items={flash} />
                 </div>
             </div>
         </section>
