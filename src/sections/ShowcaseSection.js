@@ -6,12 +6,12 @@ const ShowcaseSection = ({title1, title2, title3}) => {
   return (
     <div className="wideShowcase">
         <section className="__showcase container">
-            <img src={leftImg} class="__img-left" alt="showcase-img-left" /> 
+            <img src={leftImg} className="__img-left" alt="showcase-img-left" /> 
             <div className="__showcase-body">
                 <h1>{title1}</h1>
                 <h1>{title2}</h1>
                 <h3>{title3}</h3> 
-                <button type="submit" class="btn-theme-red">
+                <button type="submit" className="btn-theme-red">
                     <div className="line-button-l-1"></div>
                     <div className="line-button-l-2"></div>
                     <p>SHOP NOW</p>
@@ -19,7 +19,7 @@ const ShowcaseSection = ({title1, title2, title3}) => {
                     <div className="line-button-r-2"></div>
                 </button>
             </div>
-            <img src={rightImg} class="__img-right" alt="showcase-img-right" />  
+            <img src={rightImg} className="__img-right" alt="showcase-img-right" />  
         </section>
     </div>
   )
