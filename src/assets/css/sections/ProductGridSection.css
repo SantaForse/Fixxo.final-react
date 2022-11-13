@@ -1,23 +1,12 @@
 .product-grid {
     display: flex;
     flex-direction: column;
-/* Having any effect? */
-    /* align-items: center;
-    justify-content: center; */
     margin-bottom: 60px;
     padding-top: 100px;
-    
-
 }
 
     .product-grid .container {
         max-width: 1110px;
-
-/* Having any effect? */
-        /* align-items: center;
-        justify-content: center; */
-        
-
     }
 
         .product-grid .container h1 {
@@ -198,4 +187,11 @@
     }
 }
 
+@media (max-width: 300px) {
+
+    .product-grid {
+        padding-top: 30px;
+    }
+
+}
      

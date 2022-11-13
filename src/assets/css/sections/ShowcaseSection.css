@@ -74,3 +74,17 @@
 
 }
 
+@media (max-width: 300px) {
+    .__showcase .__showcase-body h1 {
+        font-size: 40px;
+        color: var(--color-theme);
+    }
+
+    .__showcase .__showcase-body >h3 {
+        margin-top: 15px;
+        margin-bottom: 25px;
+       
+    }
+   
+}
+
